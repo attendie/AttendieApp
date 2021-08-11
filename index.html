@@ -9,7 +9,7 @@
 </head>
 <body bgcolor="#080808" background="star.svg" oncontextmenu="return false;">
 	<br>
-	<div class="header_flex"><div><a href="#install">How To Install App</a></div></div>
+	<div class="header_flex"><div><a href="#install">How To Install App</a></div></div><br>
 	<center>
 <img src="app_logo.png" height="100" width="100"><br>
 <p><font color="white">For Android mobile</font></p>
@@ -29,7 +29,7 @@
   <!-- start -->
     <!-- Attendance activity -->
 <div class="card">
-  <img src="attendance_register.png" alt="Avatar" style="width:100%">
+  <img src="attendance_register.png" alt="Avatar" class="ad_image">
   <div class="container">
     <h4><b>Attendnace</b></h4> 
     <p>Check Your Attendance and manage it.</p> 
@@ -37,7 +37,7 @@
 </div>
 <div class="card">
   <!-- Result activity -->
-  <img src="resultpic.jpg" alt="Avatar" style="width:100%">
+  <img src="resultpic.jpg" alt="Avatar" class="ad_image">
   <div class="container">
     <h4><b>Result</b></h4> 
     <p>Check your semester result, also download it</p> 
@@ -45,7 +45,7 @@
 </div>
 <!-- Result Activity -->
 <div class="card">
-  <img src="moodle.png" alt="Avatar" style="width:100%">
+  <img src="moodle.png" alt="Avatar" class="ad_image">
   <div class="container">
     <h4><b>Iter Moodle</b></h4> 
     <p>Access your college Moodle within one tap </p> 
@@ -53,7 +53,7 @@
 </div>
 <!-- study collection -->
 <div class="card">
-  <img src="coin-collecting.png" alt="Avatar" style="width:100%">
+  <img src="coin-collecting.png" alt="Avatar" class="ad_image">
   <div class="container">
     <h4><b>Study Collection</b></h4> 
     <p>Access your Moodle within one tap </p> 
@@ -61,7 +61,7 @@
 </div>
 <!-- Exam Notice -->
 <div class="card">
-  <img src="test.png" alt="Avatar" style="width:100%">
+  <img src="test.png" alt="Avatar" class="ad_image">
   <div class="container">
     <h4><b>Exam Notice</b></h4> 
     <p>Tap to see your college's exam notice.</p> 
@@ -69,7 +69,7 @@
 </div>
 <!-- Student Notice -->
 <div class="card">
-  <img src="graduate.png" alt="Avatar" style="width:100%">
+  <img src="graduate.png" alt="Avatar" class="ad_image">
   <div class="container">
     <h4><b>Student Notice</b></h4> 
     <p>Tap to see your college's notice for student. </p> 
@@ -77,7 +77,7 @@
 </div>
 <!-- Time Table -->
 <div class="card">
-  <img src="timetable.png" alt="Avatar" style="width:100%">
+  <img src="timetable.png" alt="Avatar" class="ad_image">
   <div class="container">
     <h4><b>TimeTable</b></h4> 
     <p>Manage your Daily Routine. </p> 
@@ -85,7 +85,7 @@
 </div>
 <!-- Holiday -->
 <div class="card">
-  <img src="holiday.png" alt="Avatar" style="width:100%">
+  <img src="holiday.png" alt="Avatar" class="ad_image">
   <div class="container">
     <h4><b>Holiday</b></h4> 
     <p>Plan your vaccation using Holiday </p> 
@@ -120,6 +120,11 @@ img{
  border: 2px solid white;
  border-radius: 50%;
 }
+.ad_image{
+ border: 2px solid white;
+ border-radius: 50%;
+ width: 100%;
+}
 	button{
 		padding: 15px;
 		background-color: blueviolet;
@@ -144,15 +149,8 @@ img{
 h4{
 	color: white;
 }
-.head{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
- 
-
-}
 .card {
-	border: 1px solid white;
+  border: 1px solid white;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -160,6 +158,57 @@ h4{
   margin: 10px;
 
 }
+.head{
+  display: flex;
+  flex-wrap: wrap;
+  /*align-items: baseline;*/
+/*  justify-content: center;*/
+ 
+
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .head{
+  display: flex;
+  flex-wrap: wrap;
+  /*align-items: baseline;*/
+ justify-content: center;
+ width: 100%;
+ 
+
+}
+button{
+    padding: 10px;
+    background-color: blueviolet;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 15px;
+    text-decoration: none;
+  }
+.ad_image{
+ border: 2px solid white;
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+}
+.card {
+  border: 1px solid white;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+
+
+}
+  
+}
+
+
+
+
+
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
