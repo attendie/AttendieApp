@@ -11,7 +11,7 @@
 	<br>
 	<div class="header_flex"><div><a href="#install">How To Install App</a></div></div><br>
 	<center>
-<img src="app_logo.png" height="100" width="100"><br>
+<img src="app_logo.png" class="app_logo" height="100" width="100"><br>
 <p><font color="white"><b>For Android mobile</b></font><br>version 1.0</p>
 <br><br>
 <p><font color="white" class='header'>Attendie Application</font></p>
@@ -95,9 +95,41 @@
 <!-- end  -->
 </div>
 <div>
-	<a name="install"><p>How to install it.</p>
-	<hr width="100%"></hr></a>
+	<a name="install"><p><b>How to install it.</b></p>
+	<hr width="90%"></a>
+  <!-- hierarchy -->
+  <div class="installheader">
+  <div class="card_install"><p>1. Click above <b>download button</b> to download app</p><a href="attendie.apk" download>
+<button >Download For Android Application</button></a></div>
+  <div class="card_install"><p>2. Click <b>Ok</b> because this app is secure.</p><img src="screen_1.jpg" ></div>
+  <div class="card_install"><p>3. Turn on <b>"Allow from this source"</b>.</p><img src="screen_2.jpg" ></div>
+  <div class="card_install"><p>4. Click on <b>Install Anyway</b>.</p><img src="screen_3.jpg" ></div>
+
+  
 </div>
+<style type="text/css">
+.installheader{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card_install{
+  border: 1px solid white;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+width: 200px;
+  margin: 10px;
+
+}
+.card_install img{
+  width: 100%;
+}
+
+</style>
+  <!-- /hierarchy -->
+</div>
+<hr width="90%">
+<div class="footer"><center><p>Attendie Production</p><a href="mailto:webmaster@example.com"><p>contact us:-Attendie@gmail.com</p></a><a href="mailto:webmaster@example.com"><p><u>Report Bugs and Errors</u></p></a></center></div>
 </body>
 <style type="text/css">
 html{
@@ -117,7 +149,7 @@ p{
 .header{
 	font-size: 40px;
 }
-img{
+.app_logo{
  border: 2px solid white;
  border-radius: 50%;
 }
@@ -203,7 +235,18 @@ button{
 
 
 }
-  
+ .card_install{
+  border: 1px solid white;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+width: 100%;
+  margin: 10px;
+
+}
+.card_install img{
+  width: 100%;
+} 
 }
 
 
